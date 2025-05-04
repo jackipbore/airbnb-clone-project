@@ -131,3 +131,24 @@ status – e.g., pending, completed, failed
 Relationships:
 
 A payment is linked to one booking
+# Feature Breakdown
+1. User Management
+Allows users to register, log in, and manage their profiles. The system supports different user roles (e.g., guest, host) with tailored functionalities for each role.
+
+2. Property Management
+Enables hosts to list properties by adding details such as title, description, images, location, and pricing. Hosts can also update or remove listings as needed.
+
+3. Booking System
+Guests can book available properties by selecting check-in and check-out dates. The system checks availability, calculates total cost, and handles booking confirmations.
+
+4. Review System
+After completing a stay, users can rate and review properties. This feature helps maintain trust and transparency between hosts and guests.
+
+5. Payment Integration
+Secure payment processing is integrated to handle booking transactions. Users can pay using various methods and receive real-time confirmation of payment status.
+
+6. Search and Filtering
+Users can search for properties based on location, price range, availability, and amenities. Filtering options help users quickly find suitable accommodations.
+
+7. Admin Dashboard
+Admins have access to manage users, properties, bookings, and payments. It provides visibility and control over platform activity and content moderation.
