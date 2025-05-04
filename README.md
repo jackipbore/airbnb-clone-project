@@ -174,5 +174,22 @@ Protecting User Data: Ensures personal and financial information is secure.
 Securing Transactions: Maintains the integrity and trust of the booking and payment system.
 
 Maintaining Platform Trust: Strong security prevents unauthorized access and builds confidence among users and partners.
+# CI/CD Pipeline
+What is CI/CD?
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It is a development practice that automates the process of testing, building, and deploying code, allowing teams to deliver updates more reliably and frequently.
+
+Why CI/CD is Important
+Implementing CI/CD helps detect bugs early, reduces manual deployment errors, and ensures that new features and fixes are pushed to production quickly and safely. It enhances collaboration and enables continuous improvement in the software lifecycle.
+
+Tools Used
+GitHub Actions: Automates workflows for testing, linting, and deploying code upon each commit or pull request.
+
+Docker: Packages the application and its dependencies into containers for consistent deployment across environments.
+
+Docker Hub (or GitHub Container Registry): Stores and distributes Docker images used in deployment.
+
+
+
+
 
 
