@@ -152,3 +152,27 @@ Users can search for properties based on location, price range, availability, an
 
 7. Admin Dashboard
 Admins have access to manage users, properties, bookings, and payments. It provides visibility and control over platform activity and content moderation.
+# API Security
+1. Authentication
+All users must authenticate using secure methods such as JWT (JSON Web Tokens) or OAuth before accessing protected endpoints. This ensures that only verified users can interact with sensitive parts of the application, such as managing bookings or payments.
+
+2. Authorization
+Role-based access control (RBAC) will be enforced to restrict actions based on user roles (e.g., only hosts can create properties, only admins can delete users). This prevents unauthorized actions and maintains system integrity.
+
+3. Rate Limiting
+To prevent abuse such as brute-force attacks or DDoS attempts, rate limiting will be applied to API requests. This ensures fair usage and protects backend resources.
+
+4. Data Validation & Sanitization
+All input data will be validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This helps safeguard both the server and other users.
+
+5. HTTPS Enforcement
+All API traffic will be served over HTTPS to encrypt data in transit. This protects sensitive information like login credentials and payment details from eavesdropping or interception.
+
+Why Security Matters
+Protecting User Data: Ensures personal and financial information is secure.
+
+Securing Transactions: Maintains the integrity and trust of the booking and payment system.
+
+Maintaining Platform Trust: Strong security prevents unauthorized access and builds confidence among users and partners.
+
+
