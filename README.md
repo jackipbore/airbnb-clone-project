@@ -42,3 +42,92 @@ A high-performance web server and reverse proxy used to serve static files and r
 
 GitHub Actions
 A CI/CD tool used to automate testing, building, and deployment workflows for the application.
+# Database Design
+1. Users
+Represents individuals who use the platform (e.g., customers, property owners).
+
+id (Primary Key) – Unique identifier
+
+name – Full name of the user
+
+email – Email address (unique)
+
+password_hash – Encrypted password
+
+role – User role (e.g., guest, host, admin)
+
+Relationships:
+
+A user can own multiple properties
+
+A user can make multiple bookings and write reviews
+
+2. Properties
+Represents accommodation listings available for booking.
+
+id (Primary Key) – Unique identifier
+
+title – Name or title of the property
+
+description – Detailed description
+
+location – Geographic location
+
+price_per_night – Cost per night
+
+Relationships:
+
+A property belongs to a user (owner)
+
+A property can have multiple bookings and reviews
+
+3. Bookings
+Tracks reservations made by users for properties.
+
+id (Primary Key) – Unique identifier
+
+user_id – Foreign key referencing Users
+
+property_id – Foreign key referencing Properties
+
+check_in_date – Date of arrival
+
+check_out_date – Date of departure
+
+Relationships:
+
+A booking is made by one user for one property
+
+4. Reviews
+Captures user feedback about properties.
+
+id (Primary Key) – Unique identifier
+
+user_id – Foreign key referencing Users
+
+property_id – Foreign key referencing Properties
+
+rating – Star rating (1–5)
+
+comment – Text feedback
+
+Relationships:
+
+A review is written by a user for a property
+
+5. Payments
+Stores information about transactions for bookings.
+
+id (Primary Key) – Unique identifier
+
+booking_id – Foreign key referencing Bookings
+
+amount – Total payment amount
+
+payment_method – e.g., credit card, PayPal
+
+status – e.g., pending, completed, failed
+
+Relationships:
+
+A payment is linked to one booking
